@@ -1,8 +1,16 @@
 public class SmartTv {
     boolean Power = false;
-    int chanal = 1;
+    int channel = 1;
     int volume = 20;
 
-    public void ligar()
+    public void changeChannel( int newChannel){
+        channel = newChannel;
+    }
 
+    public void PowerOn(){
+        Power = true;
+    }
+    public void PowerOff(){
+        Power = false;
+    }
 }
